@@ -17,3 +17,13 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 * **Integration:** Combine both sources into a single, user-friendly data model designed for analytical queries.
 * **Scope:** Focus on the latest dataset only; historization of data is not required.
 * **Documentation:** Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+
+## Data Architecture
+
+![Data Architecture](docs/data_architecture.png)
+1. **Bronze Layer:** Stores raw data as-is from the source systems. Data is ingested from CSV files into the SQL Server database.
+
+2. **Silver Layer:** Applies data cleansing, standardization, and normalization processes to prepare data for analysis.
+
+3. **Gold Layer:** Contains business-ready data modeled into a star schema for reporting, analytics, and decision-making.
+
